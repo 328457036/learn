@@ -1,0 +1,13 @@
+w：版心居中对齐
+fr：右浮动
+fl：左浮动
+shortcut：顶部导航栏
+spacer：小竖线
+dropdown：下拉菜单
+qrcode：二维码
+header：头部
+logo：logo
+inner：内部
+search：搜索
+hotwords：热门关键字
+myCa r：购物车
