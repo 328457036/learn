@@ -11,3 +11,11 @@ inner：内部
 search：搜索
 hotwords：热门关键字
 myCa r：购物车
+navitems:导航栏
+unit：单元
+nav：导航
+help：帮助
+cover:盖子
+mask：遮盖
+info：信息
+more：更多
