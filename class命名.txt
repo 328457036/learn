@@ -19,3 +19,14 @@ cover:盖子
 mask：遮盖
 info：信息
 more：更多
+site：地址
+address：地址
+clo1：列
+grid：网格
+banner:广告
+hd：上部分
+bd：下部分
+mid：中间部分
+arrow：箭头
+current：当前
+
