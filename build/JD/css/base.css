@@ -10,7 +10,7 @@
     height: 31px;
     border-bottom: 1px solid #dddddd;
     background-color: #e3e4e5;
-    line-height: 31px;
+    line-height: 30px;
 }
 .mod-shortcut a{
     font-size: 12px;
@@ -20,8 +20,19 @@
     float: left;
     margin-left: 210px;
 }
-.site i{
-    display: inline-block;
-    width: 11px;
-    height: 14px;
+.site a i{
+    font-size: 14px;
+    color: #f10215;
+}
+.shortcut-nav{
+    float: right;
+}
+.shortcut-nav li{
+    float: left;
+}
+.shortcut-nav .spacer{
+    width: 1px;
+    height: 10px;
+    margin: 11px 11px 0 13px;
+    background-color: #999999;
 }
