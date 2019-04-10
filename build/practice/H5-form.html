@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/H5-form.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>学生档案</legend>
+            <label for="">姓名：</label>
+            <input type="text" name="userName" id="userName" placeholder="请输入用户名">
+            <label for="userPhone">手机号码：</label>
+            <input type="tel" required pattern="^1\d{10}$" name="userPhone" id="userPhone">
+            <label for="email">邮箱地址：</label>
+            <input type="email" name="email" id="email">
+            <label for="collge">所属学院：</label>
+            <input type="text" id="collage" name="collage" list="cList">
+             <datalist id="cList">
+                 <option value="前端开发"></option>
+                 <option value="java"></option>
+                 <option value="c++"></option>
+             </datalist>
+             <label for="score">入学成绩：</label>
+             <input type="number" id="score" name="score" value="0" max="100" min="0">
+             <label for="level">基础水平：</label>
+             <meter value="0" max="100" min="0" id="level" low="59" high="90"></meter>
+        </fieldset>
+    </form>
+
+    <script>
+        document.getElementById("score").oninput =function(){
+            document.getElementById("level").value = this.value;
+        }
+    </script>
+</body>
+</html>
