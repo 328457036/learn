@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        li{
+            list-style: none;
+        }
+        .box{
+            width: 600px;
+            margin: 10px auto;
+        }
+        .box > .tab{
+            height: 40px;
+            line-height: 40px;
+        }
+        .box > .tab > a{
+            float: left;
+            margin-right: 5px;
+            width: 145px;
+            height: 40px;
+            background: blue;
+            color: #fff;
+            text-align: center;
+        }
+        .box > .tab > .active{
+            background: pink;
+        }
+        .info{
+            width: 600px;
+            padding: 10px;
+            position: relative;
+        }
+        .info > section{
+            width: 100%;
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            display: none;
+        }
+        .info > .block {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="tab">
+            <a href="javascript:;" data-target="p1">国际新闻</a>
+            <a href="javascript:;" data-target="p2">国内新闻</a>
+            <a href="javascript:;" data-target="p3">体育新闻</a>
+            <a href="javascript:;" data-target="p4">娱乐新闻</a>
+        </div>
+        <div class="info">
+            <section id="p1">
+                <ul>
+                    <li>福建发生血腥命案:两女遭割喉 1男孩被砍数刀</li>
+                    <li>四川原副省长李成云被查 5年前曾违纪又复出</li>
+                    <li>胡歌反对粉丝探班：以前请吃饭现在会黑脸</li>
+                    <li>宜宾公安副局长无11111证驾驶出车祸 弃车离开现场</li>
+                </ul>
+            </section>
+            <section id="p2">
+                <ul>
+                    <li>河南再次发生矿难，死伤人数超过10</li>
+                    <li>禽流感在全国多处农作物农延，温家宝指示</li>
+                    <li>南方大旱，农作物减产绝收面积上亩</li>
+                    <li>22222</li>
+                    <li>南方大农作物减产绝收面积上亩</li>
+                    <li>猪流感在广东群体性暴发</li>
+                </ul>
+            </section>
+            <section id="p3">
+                <ul>
+                    <li>禽流感在全农作物继续蔓延，温家宝指示</li>
+                    <li>33333</li>
+                    <li>胡歌反对粉丝探班：以前请吃饭现在会黑脸</li>
+                    <li>宜禽流感在全国多作物减产绝收面积上亩</li>
+                </ul>
+            </section>
+            <section id="p4">
+                <ul>
+                    <li>福建发生血腥命案:两女遭割喉 1男孩被砍数刀</li>
+                    <li>44444 5年前曾违纪又复出</li>
+                    <li>胡歌反对粉丝探班：以前请吃饭现在会黑脸</li>
+                    <li>宜宾公安副局长无证驾驶出车祸 弃车离开现场</li>
+                </ul>
+            </section>
+                
+        </div>
+    </div>
+
+    <script>
+        window.onload = function (){
+            (function(index){
+                allA = document.querySelectorAll("a");
+                for(var i=0;i<allA.length;i++){
+                    if(index == i){
+
+                        allA[i].classList.add("active");
+
+                        var firstTarget = allA[i].dataset['target'];dd
+
+                        document.querySelector("#"+firstTarget).style.display = "block";
+
+                    }
+
+                    allA[i].onclick = function (){
+
+                        var lastA = document.querySelector(".active");
+
+                        lastA.classList.remove("active");
+
+                        var lastTarget = lastA.dataset['target'];
+
+                        document.querySelector("#"+lastTarget).style.display = "none";
+
+
+                        this.classList.add("active");
+
+                        var cureenTarget = this.dataset['target'];
+
+                        document.querySelector("#"+cureenTarget).style.display = "block";
+                    }
+
+                }
+            })(1);
+        }
+    </script>
+</body>
+</html>
