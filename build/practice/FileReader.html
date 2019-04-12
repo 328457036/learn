@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <input type="file" id="file" name="file" onchange="getFileContent();"><br>
+        <div></div>
+        <input type="submit">
+        <img src="" alt="">
+    </form>
+    <script>
+        div = document.querySelector("div");
+        
+        function getFileContent(){
+            var reader = new FileReader();
+            var myFile = document.querySelector("#file").files;
+
+            reader.readAsDataURL(myFile[0]);
+
+            reader.onload = function(){
+                document.querySelector("img").src = reader.result;
+            }
+          
+            console.log(myFile[0]);
+        }
+
+        
+
+    </script>
+</body>
+</html>
