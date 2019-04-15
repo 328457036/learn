@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .w{
+            width: 500px;
+            height: 500px;
+            margin: 100px auto;
+            border: 10px solid #ccc;
+            border-radius: 50%;
+            position: relative;
+        }
+        .line{
+            width: 10px;
+            height: 100%;
+            background-color: #ccc;
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+        }
+        .line1{
+            width: 15px;
+        }
+        .line2{
+            transform: translateX(-50%) rotate(30deg);
+        }
+        .line3{
+            transform: translateX(-50%) rotate(60deg);
+        }
+        .line4{
+            transform: translateX(-50%) rotate(90deg);
+            width: 15px;
+        }
+        .line5{
+            transform: translateX(-50%) rotate(120deg);
+        }
+        .line6{
+            transform: translateX(-50%) rotate(150deg);
+        }
+        .cover{
+            width: 450px;
+            height: 450px;
+            background: #fff;
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .hour{
+            width: 10px;
+            height: 150px;
+            background-color: green;
+            animation: rotate 43200s infinite linear;
+        
+        }
+        .minute{
+            width: 8px;
+            height: 170px;
+            background-color: blue;
+            animation: rotate 3600s infinite linear;
+         
+        }
+        .second{
+            width: 6px;
+            height: 185px;
+            background-color: red;
+           animation: rotate 60s infinite steps(60);
+        }
+        .needle{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(0,-100%); 
+            transform-origin: center bottom;
+
+        }
+        .round{
+            width: 50px;
+            height: 50px;
+            background-color: #ccc;
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+        @keyframes rotate{
+            from{
+                transform: translate(0,-100%) rotate(0deg);
+            }
+            to{
+                transform: translate(0,-100%) rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="w">
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+        <div class="line line3"></div>
+        <div class="line line4"></div>
+        <div class="line line5"></div>
+        <div class="line line6"></div>
+        <div class="cover"></div>
+        <div class="hour needle"></div>
+        <div class="minute needle"></div>
+        <div class="second needle"></div>
+        <div class="round"></div>
+    </div>
+</body>
+</html>

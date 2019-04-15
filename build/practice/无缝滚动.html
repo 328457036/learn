@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .w{
+            width: 882px;
+            height: 86px;
+            margin: 100px auto;
+            overflow: hidden;
+            position: relative;
+        }
+        .box{
+            width: 200%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            animation-name:move;
+            animation-duration: 7s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear; 
+            font-size: 0;
+            
+        }
+        .box:hover{
+            animation-play-state: paused;
+        }
+        .w > img{
+            width: 126px;
+            height: auto;
+            float: left;
+        }
+        @keyframes move{
+            form{
+                transform:translateX(0px);
+            }
+            to{
+                transform:translateX(-882px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="w">
+        <div class="box">
+                <img src="images/1.jpg" alt="">
+                <img src="images/2.jpg" alt="">
+                <img src="images/3.jpg" alt="">
+                <img src="images/4.jpg" alt="">
+                <img src="images/5.jpg" alt="">
+                <img src="images/6.jpg" alt="">
+                <img src="images/7.jpg" alt="">
+                <img src="images/1.jpg" alt="">
+                <img src="images/2.jpg" alt="">
+                <img src="images/3.jpg" alt="">
+                <img src="images/4.jpg" alt="">
+                <img src="images/5.jpg" alt="">
+                <img src="images/6.jpg" alt="">
+                <img src="images/7.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
