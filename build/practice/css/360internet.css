@@ -1,0 +1,235 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.section{
+    overflow: hidden;
+    position: relative;
+}
+.one{
+    padding-top: 80px;
+}
+.one .logo{
+    width: 251px;
+    height: 186px;
+    margin: 0 auto;
+    background: url(../images/logo.png);
+}
+.one .text{
+    text-align: center;
+    margin-top: 80px;
+}
+.one .text img{
+    margin: 0 35px;
+    opacity: 0.3;
+    transition: margin 1s,opacity 1s;
+}
+.one .info{
+    margin-top: 50px;
+    text-align: center;
+}
+.one.current .text > img{
+    margin: 0;
+    opacity: 1;
+}
+.two .shield{
+    width: 440px;
+    font-size: 0;
+}
+.two > div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.two .shield > img{
+    /*添加过渡效果*/
+    transition: transform 1s;
+}
+.two .shield > img:nth-of-type(1){
+    transform: translate(100px,100px) rotate(30deg);
+}
+.two .shield > img:nth-of-type(2){
+    transform: translate(-100px,-100px) rotate(-30deg);
+}
+.two .shield > img:nth-of-type(3){
+    transform: translate(200px,200px) rotate(60deg);
+}
+.two .shield > img:nth-of-type(4){
+    transform: translate(-200px,-200px) rotate(-60deg);
+}
+.two .shield > img:nth-of-type(5){
+    transform: translate(150px,150px) rotate(90deg);
+}
+.two .shield > img:nth-of-type(6){
+    transform: translate(50px,150px) rotate(-90deg);
+}
+.two .shield > img:nth-of-type(7){
+    transform: translate(-150px,-150px) rotate(60deg);
+}
+.two .shield > img:nth-of-type(8){
+    transform: translate(10px,-250px) rotate(-90deg);
+}
+.two .shield > img:nth-of-type(9){
+    transform: translate(-250px,10px) rotate(45deg);
+}
+.two.current .shield > img{
+    transform: none;
+}
+.three .hot{
+    width: 449px;
+    height: 453px;
+    background: url(../images/circle.png);
+    position: absolute;
+    left: 60%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.three .hot img{
+    position: absolute;
+    left: -450px;
+    top: 600px;
+    transition: left 1s,top 1s;
+}
+.three .info{
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.three.current .hot img{
+    left: 112px;
+    top: 120px;
+}
+.four .search{
+    width: 529px;
+    height: 438px;
+    position: absolute;
+    overflow: hidden;
+    right: 55%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.four .info{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.search .searchBar{
+    width: 529;
+    height: 55px;
+    background: url(../images/search.png);
+    transition: transform 1s;
+    transform: translateX(-100%);
+}
+.search .searchTxt{
+    width: 0;
+    position: absolute;
+    background: url(../images/key.png);
+    height: 22px;
+    left: 18px;
+    top: 22px;
+    transition: width 1s 1s steps(5);
+}
+.search .result{
+    width: 529px;
+    height: 0;
+    background: url(../images/result.png);
+    transition: height 1s 2s;
+}
+.four.current .searchBar{
+    transform: translateX(0);
+}
+.four.current .searchTxt{
+    width: 99px;
+}
+.four.current .result{
+    height: 372px;
+}
+.five .info{
+    text-align: center;
+    margin: 20px 0;
+}
+.five .window{
+    width: 1004px;
+    height: 472px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+}
+.five .toolBar{
+    position: relative;
+    width: 0;
+    opacity: 0;
+    transition: width 1s .5s,opacity 1s .5s;
+}
+.five .toolBar::after{
+    content: "";
+    width: 920px;
+    height: 25px;
+    border: 1px solid #98d9ef;
+    position: absolute;
+    left: 66px;
+    top: 31px;
+}
+.five .extra{
+    width: 0;
+    opacity:0;
+    position: absolute;
+    right: 0;
+    bottom:-4px;
+    border-top: 1px solid #98d9ef;
+    text-align: right;
+    transition: width 1s .5s,opacity 1s .5s;
+}
+.five .line{
+    background-color: #98d9ef;
+    position: absolute;
+    transition: all 1s;
+}
+.line1{
+    width: 1px;
+    height: 472px;
+    left: 0;
+    top: -200%;
+}
+.line2{
+    width: 1004px;
+    height: 1px;
+    right: -200%;
+    top: 0;
+}
+.line3{
+    width: 1px;
+    height: 472px;
+    right: 0;
+    bottom: 200%;
+}
+.line4{
+    width: 1004px;
+    height: 1px;
+    left: -200%;
+    bottom: 0;
+}
+.five.current .line1{
+    left: 0;
+    top: 0;
+}
+.five.current .line2{
+    right: 0;
+    top: 0;
+}
+.five.current .line3{
+    right: 0;
+    bottom: 0;
+}
+.five.current .line4{
+    left: 0;
+    bottom: 0;
+}
+.five.current .toolBar,
+.five.current .extra
+{
+    width: 100%;
+    opacity: 1;
+}

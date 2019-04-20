@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        ul{
+            list-style: none;
+        }
+        .view{
+            width: 500px;
+            height: 300px;
+            margin: 100px auto;
+            position: relative;
+        }
+        .view li{
+            float: left;
+        }
+        .view ul{
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            /* transform:rotate3d(1,1,0,-30deg); */
+        }
+        li{
+            position: relative;
+            width: 20%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: transform .5s;
+        }
+        span{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+        }
+        li > span:nth-of-type(1){
+            background: url(images/q1.jpg);
+            transform: translateZ(150px);
+        }
+        li > span:nth-of-type(2){
+            background: url(images/q2.jpg);
+            transform: translateY(-150px) rotateX(90deg);
+        }
+        li > span:nth-of-type(3){
+            background:url(images/q4.jpg);
+            transform: translateY(150px) rotateX(-90deg);
+        }
+        li > span:nth-of-type(4){
+            background:url(images/q3.jpg);
+            transform: translateZ(-150px) rotateX(180deg);
+        }
+        li:nth-of-type(2) span{
+            background-position: 22%;
+        }
+        li:nth-of-type(3) span{
+            background-position: 44%;
+        }
+        li:nth-of-type(4) span{
+            background-position: 66%;
+        }
+        li:nth-of-type(5) span{
+            background-position: 88%;
+        }
+        .pre,.next{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 30px;
+            height: 60px;
+            background: rgba(0, 0, 0, 0.3);
+        }
+        .pre{
+            left: 0;
+        }
+        .next{
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="view">
+        <ul>
+            <li>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </li>
+            <li>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </li>
+            <li>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </li>
+            <li>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </li>
+            <li>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </li>
+        </ul>
+        <a href="#" class="pre"></a>
+        <a href="#" class="next"></a>
+    </div>
+    <script>
+        var aLi = document.querySelectorAll("li");
+        var angleIndex = 1;
+        var flag = true;
+
+        document.querySelector(".next").onclick = function(){
+            if(flag){
+                flag = false;
+                for(var i=0;i<aLi.length;i++){
+                    aLi[i].style.transitionDelay = (0.2*i)+"s";
+                    aLi[i].style.transform = "rotateX("+ -90*angleIndex +"deg)";
+                }
+                angleIndex++;
+                setTimeout(function (){
+                    flag = true;
+                },1250);
+            }
+          
+        }
+    </script>
+</body>
+</html>
