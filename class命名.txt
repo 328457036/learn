@@ -43,5 +43,8 @@ college:学院
 phone：电话
 tel:手机号码
 poster:海报
+personal：个人中心
+product：产品
+
 
 
