@@ -1,0 +1,109 @@
+.w{
+    width: 1200px;
+    margin: 0 auto;
+}
+header .inear{
+    width: 1300px;
+    margin: 0 auto;
+}
+header{
+    height: 100px;
+    background-color: #f3f5f7; 
+    padding-top: 30px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.log{
+    float: left;
+    width: 196px;
+    height: 41px;
+}
+.log a{
+    width: 196px;
+    height: 41px;
+    display: block;
+    text-indent: -999px;
+    background: url(../images/logo.png) no-repeat top center;
+}
+header nav{
+    float: left;
+    margin-left: 45px;
+}
+header nav li{
+    float: left;
+    margin-right:22px;
+}
+header nav a{
+    display: block;
+    padding: 0 5px;
+    height: 40px;
+    line-height: 40px;
+    color: #000000;
+    font-size: 18px;
+}
+header nav a:hover{
+    border-bottom: 2px solid #00a4ff;
+    color: #00a4ff;
+}
+.search{
+    float: left;
+    width: 410px;
+    height: 40px;
+    margin-left: 200px;
+}
+.search input {
+    border: 1px solid #00a4ff;
+    height: 40px;
+    width: 361px;
+    outline: none;
+    padding-left: 8px;
+    box-sizing: border-box;
+    float: left;
+}
+.search button{
+    width: 49px;
+    height: 40px;
+    background-color: #00a4ff;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.search button i{
+    font-size: 20px;
+    color: #ffffff;
+}
+.user{
+    float: right;
+    font-size: 0;
+}
+.user a,
+.user span{
+    font-size: 12px;
+    color: #666666;
+    display: inline-block;
+    margin: 0 9px;
+    line-height: 40px;
+    cursor: pointer;
+    position: relative;
+}
+.user span::before{ 
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: red;
+    border-radius: 50%;
+    right: 2px;
+    top: 10px;
+}
+.user .userName img{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    transition: transform .5s;
+}
+.user .userName img:hover{
+    transform: rotate(360deg);
+}
