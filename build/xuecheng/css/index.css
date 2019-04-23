@@ -218,5 +218,135 @@
 .product .text span{
     color: #ff7c2d;
 } 
+.section{
+    
+}
+.section .hd{
+    height: 64px;
+    width: 100%;
+    line-height: 64px;
+}
+.section .hd h3{
+    float: left;
+    font-size: 20px;
+    color: #494949;
+}
+.section .hd .more{
+    float: right;
+    font-size: 12px;
+    color: #a5a5a5;
+}
+.section .hd .navitems{
+    width: 100%;
+    text-align: center;
+}
+.section .hd .navitems a{
+    color: #a5a5a5;
+    margin: 0 35px;
+    font-size: 16px;
+}
+.section .hd .navitems .active{
+    color: #00a4ff;
+
+}
+.section aside{
+    float: left;
+    width: 228px;
+    height: 392px;
+    overflow: hidden;
+    margin-right: 15px; 
+}
+.seciton aside a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.seciton aside img{
+    height: 392px;
+}
+.section article{
+    width: 957px;
+    height: 392px;
+    float: right;
+}
+.section .cont-tit{
+    width: 100%;
+    height: 100px;
+    margin-bottom: 23px;
+    overflow: hidden;
+}
+.section .cont-tit a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.section .cont-tit img{
+    height: 100px;
+}
+.section .cont-box li{
+    width: 228px;
+    height: 269px;
+    margin-right: 15px;
+    float: left;
+    background-color: #fff;
+    transition: transform .3s;
+}
+.section .cont-box li:last-child{
+    margin-right: 0;
+}
+.section .cont-box li:hover{
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    transform: translateY(-10px);
+}
+.section .cont-box li:hover img{
+    transform: scale(1.2);
+}
+.section .cont-box .pic{
+    width: 100%;
+    height: 154px;
+    overflow: hidden;
+}
+.section .cont-box .pic a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.section .cont-box .pic img{
+    height: 154px;
+}
+.section .cont-box .info{
+    width: 100%;
+    height: 115px;
+    overflow: hidden;
+    padding: 22px 20px 0 23px;
+}
+.section .cont-box .info {
+    width: 100%;
+    height: 115px;
+    overflow: hidden;
+    padding: 22px 20px 0 23px;
+}
+.section .cont-box .tit a{
+    font-size: 12px;
+    line-height: 20px;
+    color: #000;
+}
+.section .cont-box .txt{
+    margin-top: 14px;
+    font-size: 12px;
+    color: #999999;
+}
+.section .cont-box .txt span{
+    color: #ff7c2d;
+}
+.section-m article{
+    width: 100%;
+    height: 270px;
+}
+.height40{
+    width: 100%;
+    height: 40px;
+}
+
 
 
