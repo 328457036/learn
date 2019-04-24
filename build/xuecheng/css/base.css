@@ -111,3 +111,61 @@ header nav a:hover{
 .user .userName img:hover{
     transform: rotate(360deg);
 }
+.footer{
+    padding-top: 33px;
+    background: #fff;
+    height: 416px;
+    width: 100%;
+}
+.footer .copyright{
+    float: left;
+    width: 435px;
+    margin-left: 20px;
+}
+.footer .copyright .logo{
+    width: 196px;
+    height: 41px;
+    background:url(../images/logo.png) no-repeat top center;
+    text-indent: -999px;
+    overflow: hidden;
+}
+.footer .copyright .txt{
+    color: #666666;
+    font-size: 12px;
+    line-height: 20px;
+    margin: 22px 0 14px 0;
+}
+.footer .copyright .appDown{
+    display: inline-block;
+    width: 120px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    color: #00a4ff;
+    border: 1px solid #00a4ff;
+}
+.footer .copyright .appDown:hover{
+    background: #00a4ff;
+    color: #fff;
+}
+.footer .service{
+    float: right;
+}
+.footer .service .item{
+    float: left;
+    width: 225px;
+}
+.footer .service .item:last-child{
+    width: 95px;
+}
+.footer .service .item h4{
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333333;
+}
+.footer .service .item a{
+    font-size: 12px;
+    color: #333333;
+    line-height: 21px;
+    display: block;
+}
