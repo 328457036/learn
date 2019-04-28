@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function person(name,age){
+            var obj = new Object();
+            obj.name = name;
+            obj.age = age;
+            obj.sayHi = function (){
+                console.log("您好");
+            }
+            return obj;
+        }
+
+
+        function Computer(color,size,logo,num){
+            this.color = color;
+            this.size = size;
+            this.logo = logo;
+            this.num = num;
+            this.video = function (){
+                console.log("看电影");
+            };
+            this.muiss = function (){
+                console.log("听音乐");
+            };
+            this.game = function (){
+                console.log("打游戏");
+            };
+            this.code = function (){
+                console.log("敲代码");
+            };
+        }
+        
+        function Button(width,height,color,){
+            this.width = width;
+            this.height = height;
+            this.color = color;
+            this.btn = function (){
+                console.log("点击");
+            };
+            this.move = function (){
+                console.log("鼠标进入");
+            };
+        }
+
+        function Car(size,color,logo){
+            this.size = size;
+            this.color = color;
+            this.logo = logo;
+            this.person = function (){
+                console.log("载人");
+            };
+            this.product = function (){
+                console.log("拉货");
+            };
+        }
+        var per = person("小米",24);
+        console.log(per.name);
+        console.log(per.age);
+        per.sayHi();
+
+        var com = new Computer("red",10,"华为","E30");
+        console.log(com.color);
+        console.log(com.size);
+        console.log(com.logo);
+        console.log(com.num);
+        com.video();
+        com.muiss();
+        com.game();
+        com.code();
+
+        var but = new Button(10,20,"pink");
+        console.log(but.width);
+        console.log(but.height);
+        console.log(but.color);
+        but.btn();
+        but.move();
+
+        var cr = new Car(50,"blue","小米");
+        console.log(cr.size);
+        console.log(cr.color);
+        console.log(cr.logo);
+        cr.person();
+        cr.product();
+
+        console.log(Math.ceil(13.4));
+        console.log(Math.floor(25.33));
+        console.log(Math.abs(-1));
+        console.log(Math.random());
+        console.log(Math.max(10,20,30,40,50,60));
+        console.log(Math.min(10,20,30,40,50,60));
+    </script>
+</body>
+</html>
