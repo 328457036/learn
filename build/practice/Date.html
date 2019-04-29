@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var dt = new Date();
+        var year = dt.getFullYear();
+        var month = dt.getMonth()+1;
+        var day = dt.getDate();
+        var hours = dt.getHours();
+        var minuete = dt.getMinutes();
+        var second = dt.getSeconds();
+        var date = "";
+
+        month = month<=10 ? "0"+month : month;
+        day = day<=10 ? "0"+day : day;
+        hours = hours<=10 ? "0"+hours : hours;
+        minuete = minuete<=10 ? "0"+minuete : minuete;
+        second = second<=10 ? "0"+second : second;
+
+        console.log(year + "年" + month + "月" + day + "日  " + hours + ":" + minuete + ":" + second);
+
+    </script>
+</body>
+</html>
